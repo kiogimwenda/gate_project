@@ -20,7 +20,7 @@ include_directories(${Tesseract_INCLUDE_DIRS})
 include_directories(include)
 
 # Add executable
-add_executable(main src/main.cpp src/image_loader.cpp src/preprocessing.cpp src/plate_detection.cpp src/ocr.cpp)
+add_executable( src/main.cpp src/image_loader.cpp src/preprocessing.cpp src/plate_detection.cpp src/ocr.cpp)
 
 # Link libraries
 target_link_libraries(main ${OpenCV_LIBS} ${Tesseract_LIBRARIES})
