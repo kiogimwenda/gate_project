@@ -12,7 +12,7 @@ int main(){
 	}
 
 //Load an Image from file
-	cv::Mat inputImage = cv::imread("sample.jpeg");
+	cv::Mat inputImage = cv::imread("sample2.jpg");
 
 	if (inputImage.empty()){
 		std::cerr << "Failed to load image" << std::endl;
