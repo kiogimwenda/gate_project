@@ -1,10 +1,15 @@
-#ifndef PREPROCESSING_HPP
-#define PREPROCESSING_HPP
+#pragma once
 
 #include <opencv2/opencv.hpp>
+#include <opencv2/core.hpp>
+#include <vector>
 
-cv::Mat preprocessImage(const cv::Mat& image);
-cv::Mat infraredProcessing(const cv::Mat& grayImage);
-cv::Mat applyHybridThreshold(const cv::Mat& blurredImage);
+struct PreprocessedImages{
+	cv::Mat grayscale;
+	cv::Mat edgeDetected;
+	cv::Mat threshold;
+	cv::Mat morphed;
+	std::vector<std::vector<cv::Point>> plateContours;
+};
 
-#endif
+PreprocessedImages preprocessImage(const cv::Mat& image);
