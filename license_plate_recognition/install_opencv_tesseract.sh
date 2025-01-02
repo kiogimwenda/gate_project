@@ -64,8 +64,8 @@ sudo apt-get install -y \
 
 print_message "Downloading OpenCV and OpenCV contrib..."
 cd ~
-if [ ! -d "opencv-4.10.0" ]; then
-   wget -O opencv-4.10.0.zip https://github.com/opencv/opencv/archive/4.10.0.zip 
+if [ ! -d "opencv-5.x ]; then
+   wget -O opencv-5.x.zip https://github.com/opencv/opencv/archive/5.x.zip 
 fi
 
 if [ ! -d "opencv_contrib-4.10.0" ]; then
@@ -73,11 +73,11 @@ if [ ! -d "opencv_contrib-4.10.0" ]; then
 fi
 
 print_message "Extracting downloaded zip files..."
-unzip -o opencv-4.10.0.zip
+unzip -o opencv-5.x.zip
 unzip -o opencv_contrib-4.10.0.zip
 
 print_message "Creating build directory..."
-cd ~/opencv-4.10.0
+cd ~/opencv-5.x
 rm -rf build  # Remove existing build directory if it exists
 mkdir -p build
 cd build
@@ -104,9 +104,9 @@ cmake \
     -D PYTHON_EXECUTABLE=$PYTHON3_EXECUTABLE \
     -D PYTHON3_NUMPY_INCLUDE_DIRS=$PYTHON3_NUMPY_INCLUDE \
     -D PYTHON3_PACKAGES_PATH=$PYTHON3_PACKAGES_PATH \
-    -D WITH_CUDA=OFF \
-    -D WITH_CUDNN=OFF \
-    -D OPENCV_DNN_CUDA=OFF \
+    -D WITH_CUDA=ON \
+    -D WITH_CUDNN=ON \
+    -D OPENCV_DNN_CUDA=ON \
     -D ENABLE_FAST_MATH=ON \
     -D BUILD_EXAMPLES=OFF \
     -D BUILD_PERF_TESTS=OFF \
