@@ -8,6 +8,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Set the path to custom CMake modules
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
+#Find Python/YOLO
+find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
+
 # Find OpenCV
 find_package(OpenCV REQUIRED)
 
@@ -20,7 +23,8 @@ find_package(GTest REQUIRED)
 # Include directories
 include_directories(${OpenCV_INCLUDE_DIRS})
 include_directories(${Tesseract_INCLUDE_DIRS})
-include_directories(${GTEST_INCLUDE DIRS})
+include_directories(${GTEST_INCLUDE_DIRS})
+include_directories(${Python3_INCLUDE_DIRS})
 include_directories(include)
 
 # Add executable
