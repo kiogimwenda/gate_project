@@ -27,13 +27,13 @@ wget https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9s.pt
 cd ..
 
 # Download the dataset
-echo "Downloading dataset..."
-wget --no-check-certificate https://www.kaggle.com/datasets/fareselmenshawii/large-license-plate-dataset/download -O license_plate_dataset.zip
+#echo "Downloading dataset..."
+#wget --no-check-certificate https://www.kaggle.com/datasets/fareselmenshawii/large-license-plate-dataset/download -O license_plate_dataset.zip
 
 # Extract the dataset
-echo "Extracting dataset..."
-unzip license_plate_dataset.zip -d license_plate_dataset
-rm license_plate_dataset.zip
+#echo "Extracting dataset..."
+#unzip license_plate_dataset.zip -d license_plate_dataset
+#rm license_plate_dataset.zip
 
 # Create a blank data.yaml file
 echo "Creating data.yaml file..."

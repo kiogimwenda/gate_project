@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblpr.a CMakeFiles/lpr.dir/src/preprocessor.cpp.o
+/usr/bin/ranlib liblpr.a

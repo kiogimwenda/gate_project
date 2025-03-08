@@ -1,0 +1,5 @@
+/home/admin/Desktop/gate_project/license_plate_recognition/build/CMakeFiles/lpr.dir
+/home/admin/Desktop/gate_project/license_plate_recognition/build/CMakeFiles/test_preprocessor.dir
+/home/admin/Desktop/gate_project/license_plate_recognition/build/CMakeFiles/test.dir
+/home/admin/Desktop/gate_project/license_plate_recognition/build/CMakeFiles/edit_cache.dir
+/home/admin/Desktop/gate_project/license_plate_recognition/build/CMakeFiles/rebuild_cache.dir

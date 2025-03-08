@@ -1,0 +1,41 @@
+Start testing: Feb 06 20:49 EAT
+----------------------------------------------------------
+1/1 Testing: TestPreprocessor
+1/1 Test: TestPreprocessor
+Command: "/home/admin/Desktop/gate_project/license_plate_recognition/bin/test_preprocessor"
+Directory: /home/admin/Desktop/gate_project/license_plate_recognition/build
+"TestPreprocessor" start time: Feb 06 20:49 EAT
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from PreprocessorTest
+[ RUN      ] PreprocessorTest.TestPreprocess
+/home/admin/Desktop/gate_project/license_plate_recognition/tests/test_preprocessor.cpp:92: Failure
+Value of: result.plateContours.empty()
+  Actual: true
+Expected: false
+[  FAILED  ] PreprocessorTest.TestPreprocess (8 ms)
+[ RUN      ] PreprocessorTest.TestConcurrentPreprocessing
+[       OK ] PreprocessorTest.TestConcurrentPreprocessing (19 ms)
+[ RUN      ] PreprocessorTest.TestSavePreprocessedSteps
+[       OK ] PreprocessorTest.TestSavePreprocessedSteps (33 ms)
+[----------] 3 tests from PreprocessorTest (61 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (61 ms total)
+[  PASSED  ] 2 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PreprocessorTest.TestPreprocess
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"TestPreprocessor" end time: Feb 06 20:49 EAT
+"TestPreprocessor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 06 20:49 EAT
